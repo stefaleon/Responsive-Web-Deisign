@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Column Drop</title>
+    <style type="text/css">
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        width: 100%;
+        min-height: 100px;
+      }
+
+      .red { background-color: red; width: 100%; order: 1; }
+      .green { background-color: green; width: 100%; order: 2; }
+      .blue { background-color: blue; width: 100%; order: 3; }
+
+      @media screen and (min-width: 601px) {
+        .red { width: 25%; }
+        .green { width: 75%; }
+      }
+
+      @media screen and (min-width: 1001px) {
+        .red { width: 25%; }
+        .green { width: 50%; }
+        .blue { width: 25%; }
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box red"></div>
+      <div class="box green"></div>
+      <div class="box blue"></div>
+    </div>
+  </body>
+</html>
